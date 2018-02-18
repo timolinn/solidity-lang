@@ -1,8 +1,10 @@
-# Ethereum Docs
+# Solidity Docs
 
 - A contract in the sense of Solidity is a collection of code (its functions) and data (its state) that resides at a   specific address on the Ethereum blockchain.
 
-`pragma solidity ^0.4.0;
+```solidity
+
+pragma solidity ^0.4.0;
 
 contract SimpleStorage {
     uint storedData;
@@ -14,7 +16,7 @@ contract SimpleStorage {
     function get() public constant returns (uint) {
         return storedData;
     }
-}`
+}```
 
 - `uint` means unsigned integer.
 
@@ -27,7 +29,9 @@ contract SimpleStorage {
 - Anyone can send coins to each other without any need for registering with username and password - all you need is an Ethereum keypair.
 
 #### Simple cryptocurrency implementation
-```
+
+```solidity
+
 pragma solidity ^0.4.0;
 
 contract Coin {
